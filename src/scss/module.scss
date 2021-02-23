@@ -1,0 +1,39 @@
+
+/* Basic style input tag
+======================== */
+
+input[type="text"] {
+  border: none;
+  padding: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+/* Class input style
+======================== */
+
+.input {
+  width: $maxWidth;
+  height: $height;
+  background: $white;
+  box-shadow: $shadow;
+  border-radius: $radius;
+  margin: $padding * 2 0;
+  padding: $padding;
+  color: $gray;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid $white;
+  transition: border .3s;
+  input {
+    height: 14px;
+
+    &::placeholder {
+      color: $gray;
+    }
+  }
+  &:hover {
+    border: 1px solid $gray;
+  }
+}
